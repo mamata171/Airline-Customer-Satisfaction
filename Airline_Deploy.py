@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 
-pickle_in = open('rfc.pkl',"rb")
+pickle_in = open('classifier.pkl',"rb")
 classifier = pickle.load(pickle_in)
 
 st.title("Airline Customer Satisfaction")
