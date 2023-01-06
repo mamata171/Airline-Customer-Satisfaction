@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 pickle_in = open('classifier.pkl',"rb")
-classifier = pickle.load(pickle_in)
+classifier1 = pickle.load(pickle_in)
 
 st.title("Airline Customer Satisfaction")
 
@@ -30,7 +30,7 @@ def Prediction(customer_Type,On_board_service,Age,Leg_room_service,Flight_Distan
 
 
     
-    prediction = classifier.predict([[customer_Type,On_board_service,Age,
+    prediction = classifier1.predict([[customer_Type,On_board_service,Age,
                     Leg_room_service,Flight_Distance,Ease_of_Online_booking,
                     Inflight_entertainment,Class,Type_of_Travel,Online_boarding]])
     return prediction
