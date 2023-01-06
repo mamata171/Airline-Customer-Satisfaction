@@ -57,11 +57,11 @@ def main():
                 Ease_of_Online_booking,Inflight_entertainment,Class,
                 Type_of_Travel,Online_boarding)
 
-    if result==0:
-        st.success('Customer is neutral or dissatisfied'.format(result))
-            
-    else:
-        st.success('Customer is satisfied'.format(result))
+      if result==0:
+          st.success('Customer is neutral or dissatisfied'.format(result))
+
+      else:
+          st.success('Customer is satisfied'.format(result))
 
 if __name__ == "__main__":
     main()
